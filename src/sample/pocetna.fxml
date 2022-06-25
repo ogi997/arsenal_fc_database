@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="800.0" style="-fx-background-color: #e3e3e3;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="loginButton" onAction="#openLogin" layoutX="686.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Login" />
+      <Button fx:id="managersButton" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#allManagers" prefHeight="30.0" prefWidth="100.0" text="Managers" />
+      <Button fx:id="playersButton" onAction="#allPlayers" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Players" />
+      <Button fx:id="trophyButton" onAction="#allTrophy" layoutX="14.0" layoutY="85.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Trophy" />
+      <MenuButton fx:id="derbyButton" layoutX="14.0" layoutY="120.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Derby">
+        <items>
+          <MenuItem onAction="#allDerby" mnemonicParsing="false" text="All derby" />
+          <MenuItem onAction="#allDerbyByLevel" mnemonicParsing="false" text="Specific derby" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="resultsButton" layoutX="14.0" layoutY="155.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Results">
+        <items>
+          <MenuItem onAction="#allResults" mnemonicParsing="false" text="All results" />
+          <MenuItem onAction="#allResultsBySeason" mnemonicParsing="false" text="Result by season" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="transfersButton" layoutX="14.0" layoutY="190.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Transfers">
+        <items>
+          <MenuItem onAction="#allTransfers" mnemonicParsing="false" text="All transfers" />
+          <MenuItem onAction="#allTransfersBySeason" mnemonicParsing="false" text="Transfers by season" />
+        </items>
+      </MenuButton>
+      <Button fx:id="bestButton" onAction="#bestOfTheBest" layoutX="14.0" layoutY="225.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Best P&amp;M" />
+      <Button fx:id="famousButton" onAction="#allFamousPersons" layoutX="14.0" layoutY="260.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Famous" />
+      <MenuButton fx:id="contractsButton" layoutX="14.0" layoutY="295.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Conracts">
+        <items>
+          <MenuItem onAction="#allPlayersContract" mnemonicParsing="false" text="Players contract" />
+          <MenuItem onAction="#allManagersContract" mnemonicParsing="false" text="Manager contracts" />
+        </items>
+      </MenuButton>
+      <Label layoutX="143.0" layoutY="69.0" text="About ARSENAL FC">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="106.0" text="Name:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="126.0" text="Nickname:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="146.0" text="Owner:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="166.0" text="Found:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="186.0" text="Contact:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="226.0" text="Address:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="206.0" text="City:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="246.0" text="Value:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="496.0" layoutY="68.0" text="About Stadium">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="496.0" layoutY="106.0" text="Name:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="496.0" layoutY="126.0" text="Date built:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="496.0" layoutY="146.0" text="Capacity:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="496.0" layoutY="166.0" text="Length:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="496.0" layoutY="186.0" text="Width:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="clubNameLabel" layoutX="234.0" layoutY="106.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="clubNicknameLabel" layoutX="234.0" layoutY="126.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="clubOwnerLabel" layoutX="234.0" layoutY="146.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="clubFoundLabel" layoutX="234.0" layoutY="166.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="clubContactLabel" layoutX="234.0" layoutY="186.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="clubCityLabel" layoutX="234.0" layoutY="206.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="clubAddressLabel" layoutX="234.0" layoutY="226.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="clubValueLabel" layoutX="234.0" layoutY="246.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="stadiumNameLabel" layoutX="589.0" layoutY="106.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="stadiumBuiltLabel" layoutX="589.0" layoutY="126.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="stadiumCapacityLabel" layoutX="589.0" layoutY="146.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="stadiumLengthLabel" layoutX="589.0" layoutY="166.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="stadiumWidthLabel" layoutX="589.0" layoutY="186.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

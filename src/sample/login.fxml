@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerLogin">
+   <children>
+      <Label layoutX="40.0" layoutY="46.0" text="Username:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" layoutX="62.0" layoutY="84.0" />
+      <Label layoutX="40.0" layoutY="132.0" text="Password:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="passwordTextField" layoutX="62.0" layoutY="174.0" />
+      <Button fx:id="loginButton" onAction="#login" layoutX="120.0" layoutY="233.0" mnemonicParsing="false" text="Login" />
+   </children>
+</Pane>
