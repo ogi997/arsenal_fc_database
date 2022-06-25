@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.match.ControllerMa">
+   <children>
+      <TableView fx:id="tableResult" layoutX="14.0" layoutY="14.0" prefHeight="375.0" prefWidth="558.0">
+        <columns>
+          <TableColumn fx:id="rivalName" prefWidth="92.0" text="Rival Name" />
+          <TableColumn fx:id="teamScored1" prefWidth="58.0" text="Home" />
+            <TableColumn fx:id="teamScored2" prefWidth="75.0" text="Away" />
+            <TableColumn fx:id="datePlayed" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="season"  prefWidth="75.0" text="Season" />
+            <TableColumn fx:id="compName" prefWidth="105.0" text="Compatation" />
+            <TableColumn fx:id="wherePlayed" prefWidth="75.0" />
+        </columns>
+      </TableView>
+      <Button fx:id="addMatchButton" onAction="#addNewMatch" layoutX="588.0" layoutY="81.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="97.0" text="Add new match" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="updateMatchButton" onAction="#updateMatch" layoutX="588.0" layoutY="175.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="97.0" text="Update match" textAlignment="CENTER" wrapText="true" />
+      <Button onAction="#deleteMatch" layoutX="588.0" layoutY="265.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="97.0" text="Delete match" textAlignment="CENTER" wrapText="true" />
+   </children>
+</Pane>

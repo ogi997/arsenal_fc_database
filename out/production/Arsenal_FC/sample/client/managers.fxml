@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #e3e3e3;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.client.ControllerManagers">
+   <children>
+      <TableView fx:id="managerTable" layoutX="14.0" layoutY="14.0" prefHeight="275.0" prefWidth="575.0">
+        <columns>
+          <TableColumn fx:id="managerName" prefWidth="142.0" text="Name" />
+          <TableColumn fx:id="managerDateBirth" prefWidth="115.0" text="Date birth" />
+            <TableColumn fx:id="managerCountry" prefWidth="102.0" text="Country" />
+            <TableColumn fx:id="managerWinPercent" prefWidth="109.0" text="Win percent" />
+            <TableColumn fx:id="managerStatus" prefWidth="105.0" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
