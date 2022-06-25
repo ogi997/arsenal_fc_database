@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.country.ControllerCountry2">
+   <children>
+      <TableView fx:id="countryTable" layoutX="14.0" layoutY="14.0" prefHeight="275.0" prefWidth="275.0">
+        <columns>
+          <TableColumn fx:id="countryName" prefWidth="274.0" text="Country name" />
+        </columns>
+      </TableView>
+      <Button onAction="#addNewCountry" fx:id="addButton" layoutX="320.0" layoutY="14.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="128.0" text="Add new country" textAlignment="CENTER" wrapText="true" />
+      <Button onAction="#deleteCountry" layoutX="320.0" layoutY="226.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="128.0" text="Delete country" textAlignment="CENTER" wrapText="true" />
+      <Button onAction="#updateCountry" fx:id="updateButton" layoutX="320.0" layoutY="120.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="128.0" text="Update country" textAlignment="CENTER" wrapText="true" />
+   </children>
+</Pane>

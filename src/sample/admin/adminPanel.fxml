@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="290.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.ControllerAdminPanel">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Sifarnici">
+          <items>
+            <MenuItem onAction="#openCountry" fx:id="country" mnemonicParsing="false" text="Country" />
+            <MenuItem fx:id="city" mnemonicParsing="false" text="City" />
+            <MenuItem fx:id="derbyLevel" mnemonicParsing="false" text="Derby Level" />
+            <MenuItem fx:id="season" mnemonicParsing="false" text="Season" />
+            <MenuItem fx:id="playerRole" mnemonicParsing="false" text="Player role" />
+            <MenuItem fx:id="compatition" mnemonicParsing="false" text="Compatition" />
+            <MenuItem fx:id="transferStatus" mnemonicParsing="false" text="Transfer Status" />
+            <MenuItem fx:id="transferClub" mnemonicParsing="false" text="Transfer club" />
+            <MenuItem fx:id="position" mnemonicParsing="false" text="Position" />
+            <MenuItem fx:id="famousLevel" mnemonicParsing="false" text="Famous level" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="276.0" prefWidth="533.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="135.0" layoutY="176.0" style="&#10;" text="ARSENAL FOOTBALL CLUB" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <Button onAction="#openPlayers" layoutX="14.0" layoutY="70.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="107.0" text="PLAYERS" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="14.0" layoutY="128.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="107.0" text="MANAGERS" textAlignment="CENTER" wrapText="true" />
+            <Button onAction="#openUsers" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="107.0" text="USERS" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="397.0" layoutY="70.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="107.0" text="STADIUM" textAlignment="CENTER" wrapText="true" />
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="397.0" layoutY="13.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="107.0" text="Edit info about club" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="397.0" layoutY="128.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="107.0" text="RIVALS" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="397.0" layoutY="186.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="107.0" text="DERBY" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="154.0" layoutY="82.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="94.0" text="TROPHY" />
+            <Button onAction="#openMatch" layoutX="155.0" layoutY="25.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="92.0" text="MATCH" />
+            <Button layoutX="268.0" layoutY="82.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="105.0" text="TRANSFER" />
+            <Button layoutX="268.0" layoutY="25.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="105.0" text="CONTRACT" />
+            <Button layoutX="14.0" layoutY="186.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="107.0" text="FAMOUS PERSONS" textAlignment="CENTER" wrapText="true" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
