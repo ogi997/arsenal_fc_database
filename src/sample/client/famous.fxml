@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.client.ControllerFamous">
+   <children>
+      <TableView fx:id="tableFamous" layoutX="14.0" layoutY="14.0" prefHeight="274.0" prefWidth="540.0">
+        <columns>
+          <TableColumn fx:id="nameFamous" prefWidth="113.0" text="Name" />
+          <TableColumn fx:id="dateBirthFamous" prefWidth="98.0" text="Date Birth" />
+            <TableColumn fx:id="countryFamous" prefWidth="96.0" text="Country" />
+            <TableColumn fx:id="statusFamous" prefWidth="92.0" text="Status" />
+            <TableColumn fx:id="levelFamous" prefWidth="140.0" text="Famous lvl" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

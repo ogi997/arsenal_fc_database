@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.client.ControllerTransfers">
+   <children>
+      <TableView fx:id="tableTransfer" layoutX="14.0" layoutY="14.0" prefHeight="275.0" prefWidth="675.0">
+        <columns>
+          <TableColumn fx:id="namePlayer" prefWidth="121.0" text="Name" />
+          <TableColumn fx:id="birthPlayer" prefWidth="98.0" text="Birth" />
+            <TableColumn fx:id="wherePlayer" minWidth="2.0" prefWidth="100.0" text="In/Out" />
+            <TableColumn fx:id="season" prefWidth="75.0" text="Season" />
+            <TableColumn fx:id="clubName" prefWidth="147.0" text="Club name" />
+            <TableColumn fx:id="price" prefWidth="133.0" text="Price" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

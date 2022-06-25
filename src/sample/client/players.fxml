@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.client.ControllerPlayers">
+   <children>
+      <TableView fx:id="playerTable" layoutX="14.0" layoutY="14.0" prefHeight="275.0" prefWidth="775.0">
+        <columns>
+          <TableColumn fx:id="playerName" prefWidth="140.0" text="Name" />
+          <TableColumn fx:id="playerDateBirth" prefWidth="122.0" text="Date Birth" />
+            <TableColumn fx:id="playerFoot" prefWidth="92.0" text="Foot" />
+            <TableColumn fx:id="playerPosition" prefWidth="123.0" text="Position" />
+            <TableColumn fx:id="playerStatus" prefWidth="102.0" text="Status" />
+            <TableColumn fx:id="playerCountry" prefWidth="97.0" text="Country" />
+            <TableColumn fx:id="playerRole" prefWidth="98.0" text="Role" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

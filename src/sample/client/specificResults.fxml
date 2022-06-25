@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.client.ControllerSpecRes">
+   <children>
+      <TableView fx:id="tableResult" layoutX="14.0" layoutY="14.0" prefHeight="275.0" prefWidth="675.0">
+        <columns>
+          <TableColumn fx:id="rivalName" prefWidth="130.0" text="Rival name" />
+          <TableColumn fx:id="teamScored1" prefWidth="49.0" text="Home" />
+            <TableColumn fx:id="teamScored2" minWidth="2.0" prefWidth="47.0" text="Away" />
+            <TableColumn fx:id="datePlayed" prefWidth="96.0" text="Date" />
+            <TableColumn fx:id="compName" prefWidth="153.0" text="Compatition name" />
+            <TableColumn fx:id="season" prefWidth="105.0" text="Season" />
+            <TableColumn fx:id="wherePlayed" prefWidth="94.0" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
